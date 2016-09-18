@@ -1,9 +1,24 @@
 \documentclass{beamer}
+\usetheme{default}
+\usecolortheme{beaver}
 
-% \usepackage{beamerthemesplit} // Activate for custom appearance
+\title{CS 484 Presentation (Title TBD?)}
 
-\title{CS 484 Presentation}
-\author{Yuran (Helena) Niu \\ Nathaniel Bechhofer \\ Omnia Elemary \\ Jaclyn Lasky \\ Iman Khalil}
+\author{  
+\texorpdfstring{
+\begin{table}[]
+\centering
+\begin{tabular}{l|r}
+Nathaniel Bechhofer $\star$ & nbechhof@gmu.edu \\
+Omnia Elemary & oelemary@gmu.edu \\
+Iman Khalil & ikhalil2@gmu.edu \\
+Jaclyn Lasky & jlasky2@gmu.edu \\
+Yuran (Helena) Niu & yniu3@gmu.edu \\
+\end{tabular}
+\end{table}
+}{People}
+}
+
 \date{\today}
 
 \begin{document}
@@ -12,62 +27,73 @@
 
 
 
-%\section{Introduction}
-%\subsection{Overview}
 \frame % Slide 2 Problem : Relation to Data Mining and Application/Utility; Challenges; Background
 {
-  \frametitle{Slide 2}
-  We'd like to find out how much we can infer about someone's income and their country of origin.
+  \frametitle{How does education predict income?}
+  We'd like to find out how much we can infer about someone's income from their education, 
+  both in the United States and Europe.
 
 
 }
 
 \frame % Slide 3 
 {
-  \frametitle{Slide }
-
-
+  \frametitle{Data Sources}
+  We use two datasets, the United States Current Population Survey (CPS) and the European Social Survey (ESS).
+  \begin{itemize}
+  \item Both datasets are from the years 2010, 2012, and 2014.
+  \item Both datasets contain rich information about respondents.
+  \item We can use the US data from 2011, 2013, and 2015 to test our predictions.
+  \end{itemize}
+  The US data has 610,756 observations; the ESS data has 157,261 observations.
 }
 
 \frame % Slide 5 Architecture
 {
-  \frametitle{Slide }
-
-
+  \frametitle{Architecture}
+  \begin{itemize}
+  \item We obtained data files from the ESS website and the IPUMS (Integrated Public Use Microdata Series) in \texttt{dta} and \texttt{dat} formats. 
+  \item We used the software Stata to apply given data definitions from IPUMS to the \texttt{dat} file to obtain an informative \texttt{dta} file.  
+  \item With \texttt{pandas}, a Python package, we read the \texttt{dta} files as dataframe objects to use in a Python 3.5 ecosystem. 
+  \item Within this ecosystem, we used the \texttt{seaborn} package to visualize the data.
+  \end{itemize}
 }
 
 \frame % Slide 7 
 {
-  \frametitle{Slide }
-
-
+  \frametitle{Feature Selection}
+  For both data sets, we have variables telling us the following about respondents:
+  \begin{itemize}
+  \item Educational Attainment
+  \item Age
+  \item Gender
+  \item Location (US state or European country) 
+  \end{itemize}
+  In addition, the European respondents consistently report parental education. 
+  Since we are using the Annual Social and Economic Supplement (ASEC) data from the CPS, we have fairly rich data about the occupation and employment status of respondents, which can help us clarify the particular channels that education affects income through.
 }
 
 \frame % Slide 9 Experimental Design, Metrics, and Performance Evaluation 
 {
-  \frametitle{Slide }
-
-
+  \frametitle{Performance Evaluation}
+  \dots
 }
 
 
 \frame % Slide 10 Model Selection
 {
-  \frametitle{Slide }
-
+  \frametitle{Model Selection}
+  \dots
 }
 
 \frame % Slide 17 Platforms (of your choice) Software and Hardware
 {
-  \frametitle{Slide }
+  \frametitle{Platforms}
   \begin{itemize}
   \item Python 3.5
   \item \texttt{pandas} dataframe
   \item \texttt{sci-kit learn} for ML algorithms
   \end{itemize}
-
-
-
 }
 
 
