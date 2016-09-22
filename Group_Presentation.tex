@@ -1,19 +1,27 @@
 \documentclass{beamer}
+
+
+\usepackage{todonotes}
+\usepackage{ragged2e}
+\usepackage[none]{hyphenat}
+
 \usetheme{default}
 \usecolortheme{beaver}
 
-\title{CS 484 Presentation (Title TBD?)}
+\addtobeamertemplate{block begin}{}{\justifying}
+
+\title{Returns to Education in the U.S. and Europe}
 
 \author{  
 \texorpdfstring{
 \begin{table}[]
 \centering
 \begin{tabular}{l|r}
-Nathaniel Bechhofer $\star$ & nbechhof@gmu.edu \\
-Omnia Elemary & oelemary@gmu.edu \\
-Iman Khalil & ikhalil2@gmu.edu \\
-Jaclyn Lasky & jlasky2@gmu.edu \\
-Yuran (Helena) Niu & yniu3@gmu.edu \\
+Nathaniel Bechhofer $\star$ & \url{nbechhof@gmu.edu} \\
+Omnia Elemary & \url{oelemary@gmu.edu} \\
+Iman Khalil & \url{ikhalil2@gmu.edu} \\
+Jaclyn Lasky & \url{jlasky2@gmu.edu} \\
+Yuran (Helena) Niu & \url{yniu3@gmu.edu} \\
 \end{tabular}
 \end{table}
 }{People}
@@ -21,7 +29,11 @@ Yuran (Helena) Niu & yniu3@gmu.edu \\
 
 \date{\today}
 
+\let\olditem=\item
+\renewcommand{\item}{\olditem \justifying}
+
 \begin{document}
+\justify
 
 \frame{\titlepage} % Slide 1 (title, team members, emails, team leader) 
 
@@ -30,20 +42,35 @@ Yuran (Helena) Niu & yniu3@gmu.edu \\
 \frame % Slide 2 Problem : Relation to Data Mining and Application/Utility; Challenges; Background
 {
   \frametitle{How does education predict income?}
+ \begin{block}{Problem}
   We'd like to find out how much we can infer about someone's income from their education, 
-  both in the United States and Europe.
-
+  both in the United States and Europe. 
+  \end{block}
+  
+  \begin{block}{Why it matters}
+  If income matters for variables of interest from health to happiness, we can make indirect inferences about individuals and groups using individual or average education levels \textit{combined with other information}. 
+  \end{block}
+  
+  \begin{small}
+  \begin{block}{Some motivating facts}
+  \begin{itemize}
+  \item \href{https://www.clevelandfed.org/newsroom-and-events/publications/economic-commentary/2012-economic-commentaries/ec-201210-the-college-wage-premium.aspx}{``College degree holders enjoy an 84 percent increase in earnings over their high-school-educated counterparts [in the United States].''} 
+  \item \href{http://inequality.org/oecd-report-inequality-rising-faster/}{In the United States, income earners at the 90th percentile make roughly 16 times as much as those at the 10th percentile.}
+  \item \href{http://csweb.brookings.edu/content/research/essays/2014/saving-horatio-alger.html}{Americans born in the bottom income quintile have a 10\% chance of entering the top quintile. That probability \textbf{doubles} with a college degree.}
+  \end{itemize}
+  \end{block}
+\end{small}
 
 }
 
 \frame % Slide 3 
 {
   \frametitle{Data Sources}
-  We use two datasets, the United States Current Population Survey (CPS) and the European Social Survey (ESS).
+  We use two datasets, the \href{http://www.europeansocialsurvey.org/}{European Social Survey (ESS)} and the \href{https://cps.ipums.org/cps/index.shtml}{United States Current Population Survey (CPS)}; we obtained data files from the ESS website and the IPUMS (Integrated Public Use Microdata Series) in \texttt{dta} and \texttt{dat} formats.
   \begin{itemize}
   \item Both datasets are from the years 2010, 2012, and 2014.
   \item Both datasets contain rich information about respondents.
-  \item We can use the US data from 2011, 2013, and 2015 to test our predictions.
+  \item We can use the US data from 2011, 2013, and 2015 to test (some of) our predictions.
   \end{itemize}
   The US data has 610,756 observations; the ESS data has 157,261 observations.
 }
@@ -52,10 +79,10 @@ Yuran (Helena) Niu & yniu3@gmu.edu \\
 {
   \frametitle{Architecture}
   \begin{itemize}
-  \item We obtained data files from the ESS website and the IPUMS (Integrated Public Use Microdata Series) in \texttt{dta} and \texttt{dat} formats. 
+  \item For the ESS, we obtained a \texttt{dta} file with missing values and value labels already applied.
   \item We used the software Stata to apply given data definitions from IPUMS to the \texttt{dat} file to obtain an informative \texttt{dta} file.  
-  \item With \texttt{pandas}, a Python package, we read the \texttt{dta} files as dataframe objects to use in a Python 3.5 ecosystem. 
-  \item Within this ecosystem, we used the \texttt{seaborn} package to visualize the data.
+  \item With \texttt{pandas}, a Python package, we read the \texttt{dta} files as \texttt{DataFrame} objects to use in a Python 3.5 ecosystem. 
+  \item Within this ecosystem, we used the \texttt{matplotlib} and \texttt{seaborn} packages for exploratory visualization.
   \end{itemize}
 }
 
@@ -70,29 +97,71 @@ Yuran (Helena) Niu & yniu3@gmu.edu \\
   \item Location (US state or European country) 
   \end{itemize}
   In addition, the European respondents consistently report parental education. 
-  Since we are using the Annual Social and Economic Supplement (ASEC) data from the CPS, we have fairly rich data about the occupation and employment status of respondents, which can help us clarify the particular channels that education affects income through.
+  
+  The Annual Social and Economic Supplement (ASEC) data from the CPS (obtained every March) that we are using has rich data about the occupation and employment status of respondents, which can help us clarify how education affects income.
 }
 
 \frame % Slide 9 Experimental Design, Metrics, and Performance Evaluation 
 {
   \frametitle{Performance Evaluation}
-  \dots
-}
+  
+  \begin{block}{Starting with $R^2$}
+  Our main tool will be the \emph{coefficient of determination} $R^2$, defined as the proportion of variance explained by any particular model. For our first models, we can distinguish our choices using the \emph{adjusted $R^2$} criterion, defined as 
+  $\bar{R}^2 = 1 - (1-R^2) \frac{n-1}{n-k-1}$, where $n$ is the sample size and $p$ is the number of independent variables (constructed to penalize overfitting). 
+  \end{block}
+  
+  \begin{block}{Other criteria}
+  \begin{itemize}
+  \item Bayesian information criterion (BIC)
+  \item Cross validation on random subsets and years not included
+  \item Least Absolute Selection and Shrinkage Operator (LASSO) with scaled coefficients
+  \end{itemize}
+  \end{block}
+  
+  }
+  
+
+  
+  \frame % Extra Slide for regression results
+  {
+  \frametitle{Some sense of the size of coefficients for the natural log of income (with only those of ages 30-34!)}
+  
+  \input{most_basic_results_for_30_to_34.tex}
+
+  
+  }
+  
+
 
 
 \frame % Slide 10 Model Selection
 {
   \frametitle{Model Selection}
-  \dots
-}
+  Our initial pass through the data consisted exclusively of Ordinary Least Squares (OLS) regression models that include gender, age, and educational attainment as independent variables for the natural log of income. We then introduced interaction terms that allow the effects of age and educational attainment to vary by gender. (We plan to use hierarchical modeling to estimate how these effects vary by location and year). \newline
+  
+  \begin{small}
+  For now, our regressions do not use cases with missing entries for the variables in question.  
+  \end{small}
+  
+  \begin{block}{Why use the natural log of income?}
+  \begin{itemize}
+  \item The fact that $\ln(1+x) \approx x$ enables us to think of coefficients as percentage changes.
+  \item Economists typically model earnings as a function of education and work experience using the \emph{Mincer equation}, which assumes complementarity.
+  \end{itemize}
+  \end{block}
+  
+  }
 
 \frame % Slide 17 Platforms (of your choice) Software and Hardware
 {
   \frametitle{Platforms}
   \begin{itemize}
   \item Python 3.5
-  \item \texttt{pandas} dataframe
+  \item \texttt{pandas} dataframe (built on \texttt{NumPy})
   \item \texttt{sci-kit learn} for ML algorithms
+  \item \texttt{PyStan} for Bayesian hierarchical modeling using the \newline \texttt{Stan} probabilistic programming language (itself implemented using \texttt{C++})
+  \item All brought together with the Jupyter Notebook
+  \item Version control using Github
   \end{itemize}
 }
 
