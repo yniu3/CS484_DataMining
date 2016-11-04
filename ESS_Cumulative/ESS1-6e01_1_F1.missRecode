@@ -1,0 +1,1707 @@
+Recoding of missing values exported to Stata
+
+happy  How happy are you
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+sclmeet  How often socially meet with friends, relatives or colleagues
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+inmdisc  Anyone to discuss intimate and personal matters with
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+sclact  Take part in social activities compared to others of same age
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+crmvct  Respondent or household member victim of burglary/assault last 5 years
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+aesfdrk  Feeling of safety of walking alone in local area after dark
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+brghmwr  How often worry about your home being burgled
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+brghmef  Worry about home burgled has effect on quality of life
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+crvctwr  How often worry about becoming a victim of violent crime
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+crvctef  Worry about becoming victim of violent crime has effect on quality of life
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+trrenyr  How likely terrorist attack in Europe during next twelve months
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+trrcnyr  How likely terrorist attack in country during next twelve months
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+trrprsn  Terrorist suspect in prison until police satisfied
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+trrtort  Torture in country never justified even to prevent terrorist attack
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+health  Subjective general health
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+hlthhmp  Hampered in daily activities by illness/disability/infirmity/mental problem
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+rlgblg  Belonging to particular religion or denomination
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+rlgdnm  Religion or denomination belonging to at present
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+99             .C             No answer
+
+
+rlgblge  Ever belonging to particular religion or denomination
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rlgdnme  Religion or denomination belonging to in the past
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+99             .C             No answer
+
+
+rlgdgr  How religious are you
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+rlgatnd  How often attend religious services apart from special occasions
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+pray  How often pray apart from at religious services
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+dscrgrp  Member of a group discriminated against in this country
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+ctzcntr  Citizen of country
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+brncntr  Born in country
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+livecntr  How long ago first came to live in country
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+livecnta  What year you first came to live in country
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+blgetmg  Belong to minority ethnic group in country
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+facntr  Father born in country
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+facntn  Continent of birth, father
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+mocntr  Mother born in country
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+mocntn  Continent of birth, mother
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+hhmmb  Number of people living regularly as member of household
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+gndr  Gender
+
+Orig. Value    New Value      Label
+9              .A             No answer
+
+
+gndr2  Gender of second person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr3  Gender of third person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr4  Gender of fourth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr5  Gender of fifth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr6  Gender of sixth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr7  Gender of seventh person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr8  Gender of eighth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr9  Gender of ninth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr10  Gender of tenth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr11  Gender of eleventh person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr12  Gender of twelfth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr13  Gender of thirteenth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr14  Gender of fourteenth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr15  Gender of fifteenth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr16  Gender of sixteenth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr17  Gender of seventeenth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+gndr18  Gender of eighteenth person in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+9              .C             No answer
+
+
+yrbrn  Year of birth
+
+Orig. Value    New Value      Label
+7777           .A             Refusal
+8888           .B             Don't know
+9999           .C             No answer
+
+
+agea  Age of respondent, calculated
+
+Orig. Value    New Value      Label
+999            .A             Not available
+
+
+yrbrn2  Year of birth of second person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn3  Year of birth of third person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn4  Year of birth of fourth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn5  Year of birth of fifth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn6  Year of birth of sixth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn7  Year of birth of seventh person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn8  Year of birth of eighth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn9  Year of birth of ninth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn10  Year of birth of tenth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn11  Year of birth of eleventh person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn12  Year of birth of twelfth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn13  Year of birth of thirteenth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn14  Year of birth of fourteenth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn15  Year of birth of fifteenth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn16  Year of birth of sixteenth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn17  Year of birth of seventeenth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+yrbrn18  Year of birth of eighteenth person in household
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+rship2  Second person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa2  Second person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship3  Third person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa3  Third person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship4  Fourth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa4  Fourth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship5  Fifth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa5  Fifth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship6  Sixth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa6  Sixth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship7  Seventh person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa7  Seventh person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship8  Eighth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa8  Eighth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship9  Ninth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa9  Ninth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship10  Tenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa10  Tenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship11  Eleventh person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa11  Eleventh person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship12  Twelfth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa12  Twelfth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship13  Thirteenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa13  Thirteenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship14  Fourteenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa14  Fourteenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship15  Fifteenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa15  Fifteenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship16  Sixteenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa16  Sixteenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship17  Seventeenth person in household: Relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa17  Seventeenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+rship18  Eighteenth person in household: Relationship to respondent
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+rshipa18  Eighteenth person in household: relationship to respondent
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+partner  Lives with husband/wife/partner at household grid
+
+Orig. Value    New Value      Label
+6              .A             
+9              .B             Not available
+
+
+rshpsts  Relationship with husband/wife/partner currently living with
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+marsts  Legal marital status
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+marital  Legal marital status
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+martlfr  Legal marital status, France
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+maritala  Legal marital status
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+maritalb  Legal marital status, post coded
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+lvghw  Currently living with husband/wife
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+lvghwa  Currently living with husband/wife/civil partner
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+lvgoptn  Currently living with another partner than husband/wife
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+lvgptn  Currently living with partner
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+lvgptna  Currently living with partner
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+lvgptne  Ever lived with a partner without being married
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+lvgptnea  Ever lived with a partner, without being married
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+dvrcdev  Ever been divorced
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+dvrcdeva  Ever been divorced/had civil union dissolved
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+chldhm  Children living at home or not
+
+Orig. Value    New Value      Label
+9              .A             Not available
+
+
+chldhhe  Ever had children living in household
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+domicil  Domicile, respondent's description
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+edulvla  Highest level of education
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+edulvlb  Highest level of education
+
+Orig. Value    New Value      Label
+7777           .A             Refusal
+8888           .B             Don't know
+9999           .C             No answer
+
+
+eisced  Highest level of education, ES - ISCED
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+edufld  Field or subject, highest qualification
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+eduyrs  Years of full-time education completed
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+mainact  Main activity last 7 days
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+mnactic  Main activity, last 7 days. All respondents. Post coded
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+crpdwk  Control paid work last 7 days
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+pdjobev  Ever had a paid job
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+pdjobyr  Year last in paid job
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+emplrel  Employment relation
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+emplno  Number of employees respondent has/had
+
+Orig. Value    New Value      Label
+66666          .A             Not applicable
+77777          .B             Refusal
+88888          .C             Don't know
+99999          .D             No answer
+
+
+wrkctr  Employment contract unlimited or limited duration
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+wrkctra  Employment contract unlimited or limited duration
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+estsz  Establishment size
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+jbspv  Responsible for supervising other employees
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+njbspv  Number of people responsible for in job
+
+Orig. Value    New Value      Label
+66666          .A             Not applicable
+77777          .B             Refusal
+88888          .C             Don't know
+99999          .D             No answer
+
+
+wkdcorg  Allowed to decide how daily work is organised
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+wkdcorga  Allowed to decide how daily work is organised
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+iorgact  Allowed to influence policy decisions about activities of organisation
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+wkhct  Total contracted hours per week in main job overtime excluded
+
+Orig. Value    New Value      Label
+666            .A             Not applicable
+777            .B             Refusal
+888            .C             Don't know
+999            .D             No answer
+
+
+wkhtot  Total hours normally worked per week in main job overtime included
+
+Orig. Value    New Value      Label
+666            .A             Not applicable
+777            .B             Refusal
+888            .C             Don't know
+999            .D             No answer
+
+
+nacer1  Industry, NACE rev.1
+
+Orig. Value    New Value      Label
+666            .A             Not applicable
+777            .B             Refusal
+888            .C             Don't know
+999            .D             No answer
+
+
+nacer11  Industry, NACE rev.1.1
+
+Orig. Value    New Value      Label
+666            .A             Not applicable
+777            .B             Refusal
+888            .C             Don't know
+999            .D             No answer
+
+
+nacer2  Industry, NACE rev.2
+
+Orig. Value    New Value      Label
+666            .A             Not applicable
+777            .B             Refusal
+888            .C             Don't know
+999            .D             No answer
+
+
+tporgwk  What type of organisation work/worked for
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+iscoco  Occupation, ISCO88 (com)
+
+Orig. Value    New Value      Label
+66666          .A             Not applicable
+77777          .B             Refusal
+88888          .C             Don't know
+99999          .D             No answer
+
+
+isco08  Occupation, ISCO08
+
+Orig. Value    New Value      Label
+66666          .A             Not applicable
+77777          .B             Refusal
+88888          .C             Don't know
+99999          .D             No answer
+
+
+wrkac6m  Paid work in another country, period more than 6 months last 10 years
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+uemp3m  Ever unemployed and seeking work for a period more than three months
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+uemp12m  Any period of unemployment and work seeking lasted 12 months or more
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+uemp5yr  Any period of unemployment and work seeking within last 5 years
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+mbtru  Member of trade union or similar organisation
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+hincsrc  Main source of household income
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+hincsrca  Main source of household income
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+hinctnt  Household's total net income, all sources
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+hinctnta  Household's total net income, all sources
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+hincfel  Feeling about household's income nowadays
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+brwmny  Borrow money to make ends meet, difficult or easy
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+edulvlpa  Partner's highest level of education
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+edulvlpb  Partner's highest level of education
+
+Orig. Value    New Value      Label
+6666           .A             Not applicable
+7777           .B             Refusal
+8888           .C             Don't know
+9999           .D             No answer
+
+
+eiscedp  Partner's highest level of education, ES - ISCED
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+mnactp  Partner's main activity last 7 days
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+crpdwkp  Partner, control paid work last 7 days
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+iscocop  Occupation partner, ISCO88 (com)
+
+Orig. Value    New Value      Label
+66666          .A             Not applicable
+77777          .B             Refusal
+88888          .C             Don't know
+99999          .D             No answer
+
+
+isco08p  Occupation partner, ISCO08
+
+Orig. Value    New Value      Label
+66666          .A             Not applicable
+77777          .B             Refusal
+88888          .C             Don't know
+99999          .D             No answer
+
+
+emprelp  Partner's employment relation
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+emplnop  Number of employees partner has
+
+Orig. Value    New Value      Label
+66666          .A             Not applicable
+77777          .B             Refusal
+88888          .C             Don't know
+99999          .D             No answer
+
+
+jbspvp  Partner responsible for supervising other employees
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+njbspvp  Number of people partner responsible for in job
+
+Orig. Value    New Value      Label
+66666          .A             Not applicable
+77777          .B             Refusal
+88888          .C             Don't know
+99999          .D             No answer
+
+
+wkdcorp  Partner allowed to decide how daily work is organised
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+ioactp  Partner is allowed to influence policy decisions about activities of organisation
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+wkhtotp  Hours normally worked a week in main job overtime included, partner
+
+Orig. Value    New Value      Label
+666            .A             Not applicable
+777            .B             Refusal
+888            .C             Don't know
+999            .D             No answer
+
+
+edulvlfa  Father's highest level of education
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+edulvlfb  Father's highest level of education
+
+Orig. Value    New Value      Label
+7777           .A             Refusal
+8888           .B             Don't know
+9999           .C             No answer
+
+
+eiscedf  Father's highest level of education, ES - ISCED
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+emprf14  Father's employment status when respondent 14
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+emplnof  Number of employees father had
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+jbspvf  Father responsible for supervising other employees
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+occf14  Father's occupation when respondent 14
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+occf14a  Father's occupation when respondent 14
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+occf14b  Father's occupation when respondent 14
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+edulvlma  Mother's highest level of education
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+edulvlmb  Mother's highest level of education
+
+Orig. Value    New Value      Label
+7777           .A             Refusal
+8888           .B             Don't know
+9999           .C             No answer
+
+
+eiscedm  Mother's highest level of education, ES - ISCED
+
+Orig. Value    New Value      Label
+77             .A             Refusal
+88             .B             Don't know
+99             .C             No answer
+
+
+emprm14  Mother's employment status when respondent 14
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+emplnom  Number of employees mother had
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+jbspvm  Mother responsible for supervising other employees
+
+Orig. Value    New Value      Label
+6              .A             Not applicable
+7              .B             Refusal
+8              .C             Don't know
+9              .D             No answer
+
+
+occm14  Mother's occupation when respondent 14
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+occm14a  Mother's occupation when respondent 14
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+occm14b  Mother's occupation when respondent 14
+
+Orig. Value    New Value      Label
+66             .A             Not applicable
+77             .B             Refusal
+88             .C             Don't know
+99             .D             No answer
+
+
+atncrse  Improve knowledge/skills: course/lecture/conference, last 12 months
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+fxltph  Fixed-line telephone in accommodation
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+mbltph  Personally have mobile telephone
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
+inttph  Use the Internet for telephone calls at home
+
+Orig. Value    New Value      Label
+7              .A             Refusal
+8              .B             Don't know
+9              .C             No answer
+
+
