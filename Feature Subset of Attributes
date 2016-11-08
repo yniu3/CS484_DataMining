@@ -1,14 +1,14 @@
 Subset of Attributes (US data set)
 
-Age
-Sex
+_Age
+_Gender
 Race
 Martial Status
 Armed Forces
 Adult Civilian
 Age at First Marriage
 Health Insurance
-Educational Attainment
+_Educational Attainment
 Kind of family
 Citizenship Status
 Hispanic Origin
@@ -18,7 +18,7 @@ Working towards what degree
 Major field of study
 Location (by State)
 Poverty
-Employment Status
+_Employment Status
 Occupation
 Industry
 Fertility Supplement
