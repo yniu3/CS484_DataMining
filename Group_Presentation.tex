@@ -8,9 +8,13 @@
 \usetheme{default}
 \usecolortheme{beaver}
 
+
+
+\setbeamerfont{page number in head/foot}{size=\large}
+\setbeamertemplate{footline}[frame number]
 \addtobeamertemplate{block begin}{}{\justifying}
 
-\title{Returns to Education in the U.S. and Europe}
+\title{Investment Value of Education in the U.S. and Europe}
 
 \author{  
 \texorpdfstring{
@@ -66,7 +70,7 @@ Team 4
 
 \frame % Slide 3 
 {
-  \frametitle{3: Data Sources}
+  \frametitle{Data Sources}
   We use two datasets, the \href{http://www.europeansocialsurvey.org/}{European Social Survey (ESS)} and the \href{https://cps.ipums.org/cps/index.shtml}{United States Current Population Survey (CPS)}; we obtained data files from the ESS website and the IPUMS (Integrated Public Use Microdata Series) in \texttt{dta} and \texttt{dat} formats.
   \begin{itemize}
   \item Both datasets are from the years 2010, 2012, and 2014.
@@ -76,15 +80,51 @@ Team 4
   The US data has 610,756 observations; the ESS data has 157,261 observations.
 }
 
+\frame % Slide 4
+{
+  \frametitle{Features}
+Our dependent variable is measured differently in these datasets: the ESS gives us within country deciles, while the CPS gives a numerical answer in dollars. For the US, we only analyze those between the ages of 30 and 34 making between \$10K and \$500K. 
+
+}
+
+
+
+
 \frame % Slide 5 Architecture
 {
   \frametitle{Architecture}
   \begin{itemize}
   \item For the ESS, we obtained a \texttt{dta} file with missing values and value labels already applied.
-  \item We used the software Stata to apply given data definitions from IPUMS to the \texttt{dat} file to obtain an informative \texttt{dta} file.  
-  \item With \texttt{pandas}, a Python package, we read the \texttt{dta} files as \texttt{DataFrame} objects to use in a Python 3.5 ecosystem. 
+  \item We used the software Stata to apply given data definitions from IPUMS to the CPS \texttt{dat} file to obtain an informative \texttt{dta} file.  
+  \item With \texttt{pandas}, a Python package, we read the \texttt{dta} files as \texttt{DataFrame} objects to use in a Python 3.5 ecosystem.
   \item Within this ecosystem, we used the \texttt{matplotlib} and \texttt{seaborn} packages for exploratory visualization.
   \end{itemize}
+
+
+
+  
+}
+
+\frame % Slide 6
+{
+  \frametitle{Preprocessing}
+
+
+
+
+}
+
+\frame % Slide 7
+{
+  \frametitle{Normalization}
+
+
+\begin{block}{Why use the natural log of income?}
+  \begin{itemize}
+  \item The fact that $\ln(1+x) \approx x$ enables us to think of coefficients as percentage changes.
+  \item Economists typically model earnings as a function of education and work experience using the \emph{Mincer equation}, which assumes complementarity.
+  \end{itemize}
+  \end{block}
 
 \begin{figure}[htbp]
 \begin{center}
@@ -95,10 +135,10 @@ Team 4
 \end{center}
 \end{figure}
 
-  
 }
 
-\frame % Slide 7 
+
+\frame % Slide 8
 {
   \frametitle{Feature Selection}
   For both data sets, we have variables telling us the following about respondents:
@@ -106,42 +146,24 @@ Team 4
   \item Educational Attainment
   \item Age
   \item Gender
-  \item Location (US state or European country) 
   \end{itemize}
   In addition, the European respondents consistently report parental education. 
   
   The Annual Social and Economic Supplement (ASEC) data from the CPS (obtained every March) that we are using has rich data about the occupation and employment status of respondents, which can help us clarify how education affects income.
 }
 
-\frame % Slide 9 Experimental Design, Metrics, and Performance Evaluation 
+
+\frame % Slide 9 Dimensionality Reduction
 {
-  \frametitle{Performance Evaluation}
+  \frametitle{Dimensionality Reduction}
   
-  \begin{block}{Starting with $R^2$}
-  Our main tool will be the \emph{coefficient of determination} $R^2$, defined as the proportion of variance explained by any particular model. For our first models, we can distinguish our choices using the \emph{adjusted $R^2$} criterion, defined as 
-  $\bar{R}^2 = 1 - (1-R^2) \frac{n-1}{n-k-1}$, where $n$ is the sample size and $p$ is the number of independent variables (constructed to penalize overfitting). 
-  \end{block}
-  
-  \begin{block}{Other criteria}
-  \begin{itemize}
-  \item Bayesian information criterion (BIC)
-  \item Cross validation on random subsets and years not included
-  \item Least Absolute Selection and Shrinkage Operator (LASSO) with scaled coefficients
-  \end{itemize}
-  \end{block}
+ 
   
   }
   
 
   
-  \frame % Extra Slide for regression results
-  {
-  \frametitle{Some sense of the size of coefficients for the natural log of income (with only those of ages 30-34!)}
-  
-  \input{most_basic_results_for_30_to_34.tex}
 
-  
-  }
   
 
 
@@ -149,32 +171,94 @@ Team 4
 \frame % Slide 10 Model Selection
 {
   \frametitle{Model Selection}
-  Our initial pass through the data consisted exclusively of Ordinary Least Squares (OLS) regression models that include gender, age, and educational attainment as independent variables for the natural log of income. We then introduced interaction terms that allow the effects of age and educational attainment to vary by gender. (We plan to use hierarchical modeling to estimate how these effects vary by location and year). \newline
+
   
-  \begin{small}
-  For now, our regressions do not use cases with missing entries for the variables in question.  
-  \end{small}
   
-  \begin{block}{Why use the natural log of income?}
-  \begin{itemize}
-  \item The fact that $\ln(1+x) \approx x$ enables us to think of coefficients as percentage changes.
-  \item Economists typically model earnings as a function of education and work experience using the \emph{Mincer equation}, which assumes complementarity.
-  \end{itemize}
-  \end{block}
+  
+  }
+  
+  \frame % Slide 11
+  {
+  \frametitle{Results from Linear Regression}
+  \begin{Large}
+  \input{most_basic_results_for_30_to_34.tex}
+  \end{Large}
+
+\vspace{16pt}
+
+  For all of these regression results, we have a sample size of 31640 people, all between the ages of 30 and 34 and with income between \$10000 and \$500000.
+  
+  }
+  
+  \frame % Slide 12
+  {
+  \frametitle{Evaluation}
+  \begin{Large}
+  \input{most_basic_results_for_30_to_34.tex}
+  \end{Large}
+
+\vspace{16pt}
+
+  For all of these regression results, we have a sample size of 31640 people, all between the ages of 30 and 34 and with income between \$10000 and \$500000.
   
   }
 
-\frame % Slide 17 Platforms (of your choice) Software and Hardware
+\frame % Slide 13
+{
+  \frametitle{Ranked Performance}
+  
+}
+
+\frame % Slide 14
+{
+  \frametitle{ML Algorithms}
+  
+}
+
+\frame % Slide 15
+{
+  \frametitle{Details}
+  
+}
+  
+  
+  
+\frame % Slide 16 
+{
+  \frametitle{Prediction}
+  
+}
+
+\frame % Slide 17 
+{
+  \frametitle{Plots}
+  
+}
+
+
+
+\frame % Slide 18 Platforms (of your choice) Software and Hardware
 {
   \frametitle{Platforms}
   \begin{itemize}
   \item Python 3.5
   \item \texttt{pandas} dataframe (built on \texttt{NumPy})
   \item \texttt{sci-kit learn} for ML algorithms
-  \item \texttt{PyStan} for Bayesian hierarchical modeling using the \newline \texttt{Stan} probabilistic programming language (itself implemented using \texttt{C++})
   \item All brought together with the Jupyter Notebook
   \item Version control using Github
   \end{itemize}
+}
+
+\frame % Slide 19 Discussion
+{
+  \frametitle{Discussion}
+
+}
+
+\frame % Slide 20 Conclusions
+{
+  \frametitle{Conclusion}
+
 }
 
 
