@@ -90,8 +90,14 @@ Team 4
   \frametitle{Features}
 Our dependent variable is measured differently in these datasets: the ESS gives us within country deciles, while the CPS gives a numerical answer in dollars.
 
-
-
+For both data sets, we have variables telling us the following about respondents:
+  \begin{itemize}
+  \item Educational Attainment
+  \item Age
+  \item Gender
+  \end{itemize}
+  
+  The Annual Social and Economic Supplement (ASEC) data from the CPS (obtained every March) that we are using has rich data about the occupation and employment status of respondents, which can help us clarify how education affects income.
 
 }
 
@@ -158,14 +164,12 @@ Our dependent variable is measured differently in these datasets: the ESS gives 
 \frame % Slide 8
 {
   \frametitle{Feature Selection}
-  For both data sets, we have variables telling us the following about respondents:
-  \begin{itemize}
-  \item Educational Attainment
-  \item Age
-  \item Gender
-  \end{itemize}
+  To select features for prediction, we refer back to the basic problem: how can we best predict income using independent variables that have effects that are not operating via other independent variables include?
   
-  The Annual Social and Economic Supplement (ASEC) data from the CPS (obtained every March) that we are using has rich data about the occupation and employment status of respondents, which can help us clarify how education affects income.
+  We can expect that the effects of age or gender are not primarily operating via, e.g. education. 
+  
+  
+  
 }
 
 
@@ -198,8 +202,13 @@ Some variables we don't use:
 \frame % Slide 10 Model Selection
 {
   \frametitle{Model Selection}
-Our primary tool for model selection will be the $R^2$ value for 
-  
+Our primary tool for model selection will be the $R^2$ values for linear regression. This calculates how much of the variation in measured income can be accounted for by the model. The values we obtain differ very little from those obtained when using an $R^2$ that penalizes for overfitting, as our sample size is large with every predictor both statistically and practically significant.
+\vspace{48pt}
+
+
+When working with the ESS data, which classifies income by deciles, we compute the total number of false positives, false negatives, and true positives over all classes, and then we compute precision, recall, and f-score using these counts. We then average these scores.   
+
+
   
   
   }
@@ -211,9 +220,9 @@ Our primary tool for model selection will be the $R^2$ value for
   \input{most_basic_results_for_30_to_34.tex}
   \end{Large}
 
-\vspace{16pt}
+\vspace{12pt}
 
-  For all of these regression results, we have a sample size of 31640 people, all between the ages of 30 and 34 and with income between \$10000 and \$500000.
+  For all of these regression results, our sample is all between the ages of 30 and 34 and with income between \$10000 and \$500000.
   
   }
   
@@ -221,26 +230,44 @@ Our primary tool for model selection will be the $R^2$ value for
   {
   \frametitle{Evaluation}
   
+  For all of our linear regression results, models with more predictors have increased $R^2$ values. 
+  
+  Moreover, we get consistent results for many of our coefficients, indicating relatively result estimation. 
   
   }
 
-\frame % Slide 13
-{
-  \frametitle{Ranked Performance}
-  
-}
+%\frame % Slide 13
+%{
+%  \frametitle{Ranked Performance}
+%  
+%  Right now, we have only used 
+%  
+%}
 
 \frame % Slide 14
 {
   \frametitle{ML Algorithms}
   
-}
+  For the Regression Tree of maximum depth 2, we obtain an average cross validation score of 0.200 when using 4-fold cross validation. This increases to 0.222 when allowing the maximum depth to be 5, indicating that higher depth is unambiguously better for our purposes.
+  
+  To come (with the ESS categorical income categorization, where our problem turns into classification):
+  \begin{itemize}
+\item Classification Decision Trees
+\item Back-propogation
+\item Random Forests
+\item AdaBoost
+\end{itemize}
 
-\frame % Slide 15
-{
-  \frametitle{Details}
+  
+  
   
 }
+
+%\frame % Slide 15
+%{
+%  \frametitle{Details}
+%  
+%}
   
   
   
@@ -248,13 +275,15 @@ Our primary tool for model selection will be the $R^2$ value for
 {
   \frametitle{Prediction}
   
-}
-
-\frame % Slide 17 
-{
-  \frametitle{Plots}
+  We are currently in the process of importing the sequestered data for the CPS to test the predictions we made, along with testing for the effects within our dataset for people aged 35-39.
   
 }
+
+%\frame % Slide 17 
+%{
+%  \frametitle{Plots}
+%  
+%}
 
 
 
@@ -273,13 +302,15 @@ Our primary tool for model selection will be the $R^2$ value for
 \frame % Slide 19 Discussion
 {
   \frametitle{Discussion}
+  
+  All of the variables included appear to be both statistically and practically significant; we plan to add in additional features that are available to us from both datasets.
 
 }
 
 \frame % Slide 20 Conclusions
 {
   \frametitle{Conclusion}
-  Education matters a lot for income.
+  Education matters a lot for income. We get a remarkably good fit when using our log-linear model, indicating that education primarily affects how income changes, rather than income levels themselves. Further work might explore the interaction of education and age, along with hierarchical modeling that can incorporate variables than we excluded.
 
 }
 
