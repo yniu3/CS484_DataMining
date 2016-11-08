@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 NOV 2016 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 NOV 2016 14:03
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1065,7 +1065,13 @@ Overfull \vbox (20.52948pt too high) detected at line 69
 
 [2
 
-] [3
+]
+Overfull \hbox (14.01476pt too wide) in paragraph at lines 86--86
+\OT1/cmss/m/n/10.95 We ob-tained data files from the ESS web-site and the IPUMS
+ (In-te-grated
+ []
+
+[3
 
 ] [4
 
@@ -1073,30 +1079,33 @@ Overfull \vbox (20.52948pt too high) detected at line 69
 
 ] [6
 
-]
-<example_histograms.pdf, id=188, 1247.82617pt x 306.66306pt>
+] <example_histograms.pdf, id=190, 1247.82617pt x 306.66306pt>
 File: example_histograms.pdf Graphic file (type pdf)
 
 <use example_histograms.pdf>
-Package pdftex.def Info: example_histograms.pdf used on input line 138.
+Package pdftex.def Info: example_histograms.pdf used on input line 155.
 (pdftex.def)             Requested size: 307.28987pt x 75.51913pt.
 
-Overfull \vbox (0.17223pt too high) detected at line 138
+Overfull \vbox (0.17223pt too high) detected at line 155
  []
 
 [7
 
  <./example_histograms.pdf>] [8
 
-] [9
+]
+Overfull \hbox (8.86143pt too wide) in paragraph at lines 189--189
+[]\OT1/cmss/m/n/10.95 We are cur-rently work-ing on re-duc-ing the di-men-sion-
+al-ity of oc-cu-pa-tion,
+ []
+
+[9
 
 ] [10
 
-]
-(./most_basic_results_for_30_to_34.tex) [11
+] (./most_basic_results_for_30_to_34.tex) [11
 
-]
-(./most_basic_results_for_30_to_34.tex) [12
+] [12
 
 ] [13
 
@@ -1104,14 +1113,14 @@ Overfull \vbox (0.17223pt too high) detected at line 138
 
 ] [15
 
-] [16
+]
+[16
 
 ] [17
 
 ] [18
 
-]
-[19
+] [19
 
 ] [20
 
@@ -1125,11 +1134,11 @@ Overfull \vbox (0.17223pt too high) detected at line 138
 \tf@snm=\write8
 \openout8 = `Group_Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
  (./Group_Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
 Package rerunfilecheck Info: File `Group_Presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1137,11 +1146,11 @@ Package rerunfilecheck Info: File `Group_Presentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
  ) 
 Here is how much of TeX's memory you used:
- 20282 strings out of 493014
- 403137 string characters out of 6133351
+ 20280 strings out of 493014
+ 403065 string characters out of 6133351
  468479 words of memory out of 5000000
  23300 multiletter control sequences out of 15000+600000
  16827 words of font info for 62 fonts, out of 8000000 for 9000
@@ -1150,17 +1159,18 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pf
-b>
-Output written on Group_Presentation.pdf (20 pages, 139239 bytes).
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+
+Output written on Group_Presentation.pdf (20 pages, 146921 bytes).
 PDF statistics:
- 624 PDF objects out of 1000 (max. 8388607)
- 552 compressed objects within 6 object streams
+ 628 PDF objects out of 1000 (max. 8388607)
+ 555 compressed objects within 6 object streams
  42 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
