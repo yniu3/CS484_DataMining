@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 NOV 2016 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  8 NOV 2016 14:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1083,10 +1083,10 @@ Overfull \hbox (14.01476pt too wide) in paragraph at lines 86--86
 File: example_histograms.pdf Graphic file (type pdf)
 
 <use example_histograms.pdf>
-Package pdftex.def Info: example_histograms.pdf used on input line 155.
+Package pdftex.def Info: example_histograms.pdf used on input line 161.
 (pdftex.def)             Requested size: 307.28987pt x 75.51913pt.
 
-Overfull \vbox (0.17223pt too high) detected at line 155
+Overfull \vbox (0.17223pt too high) detected at line 161
  []
 
 [7
@@ -1094,7 +1094,7 @@ Overfull \vbox (0.17223pt too high) detected at line 155
  <./example_histograms.pdf>] [8
 
 ]
-Overfull \hbox (8.86143pt too wide) in paragraph at lines 189--189
+Overfull \hbox (8.86143pt too wide) in paragraph at lines 193--193
 []\OT1/cmss/m/n/10.95 We are cur-rently work-ing on re-duc-ing the di-men-sion-
 al-ity of oc-cu-pa-tion,
  []
@@ -1118,12 +1118,6 @@ al-ity of oc-cu-pa-tion,
 
 ] [17
 
-] [18
-
-] [19
-
-] [20
-
 ]
 \tf@nav=\write6
 \openout6 = `Group_Presentation.nav'.
@@ -1134,11 +1128,11 @@ al-ity of oc-cu-pa-tion,
 \tf@snm=\write8
 \openout8 = `Group_Presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 319.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 319.
  (./Group_Presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 288.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 288.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 319.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 319.
 Package rerunfilecheck Info: File `Group_Presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1146,16 +1140,16 @@ Package rerunfilecheck Info: File `Group_Presentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
  ) 
 Here is how much of TeX's memory you used:
- 20280 strings out of 493014
- 403065 string characters out of 6133351
+ 20268 strings out of 493014
+ 402960 string characters out of 6133351
  468479 words of memory out of 5000000
- 23300 multiletter control sequences out of 15000+600000
+ 23294 multiletter control sequences out of 15000+600000
  16827 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,14n,63p,398b,577s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,14n,63p,414b,577s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><
@@ -1167,10 +1161,10 @@ usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
 
-Output written on Group_Presentation.pdf (20 pages, 146921 bytes).
+Output written on Group_Presentation.pdf (17 pages, 146076 bytes).
 PDF statistics:
- 628 PDF objects out of 1000 (max. 8388607)
- 555 compressed objects within 6 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 548 PDF objects out of 1000 (max. 8388607)
+ 479 compressed objects within 5 object streams
+ 36 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
